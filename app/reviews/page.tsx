@@ -14,6 +14,7 @@ import { useState, useMemo } from "react"
 const products = [
   {
     id: 1,
+    slug: "puppy-supplies-starter-kit",
     name: "Abbylike 50 Pcs Puppy Supplies Starter Kit for Small Dogs",
     price: "$49.99",
     originalPrice: "$69.99",
@@ -28,6 +29,7 @@ const products = [
   },
   {
     id: 2,
+    slug: "small-dog-harness-leash-set",
     name: "Small Dog Harness and Leash Set - Adjustable",
     price: "$24.99",
     originalPrice: "$34.99",
@@ -42,6 +44,7 @@ const products = [
   },
   {
     id: 3,
+    slug: "interactive-puzzle-toys",
     name: "Interactive Puzzle Toys for Mental Stimulation",
     price: "$19.99",
     originalPrice: "$29.99",
@@ -55,6 +58,7 @@ const products = [
   },
   {
     id: 4,
+    slug: "premium-dog-food-grain-free",
     name: "Premium Small Dog Food - Grain Free",
     price: "$32.99",
     originalPrice: "$39.99",
@@ -68,6 +72,7 @@ const products = [
   },
   {
     id: 5,
+    slug: "luxury-dog-bed-memory-foam",
     name: "Luxury Small Dog Bed with Memory Foam",
     price: "$45.99",
     originalPrice: "$59.99",
@@ -81,6 +86,7 @@ const products = [
   },
   {
     id: 6,
+    slug: "designer-collar-collection",
     name: "Designer Collar Collection - 3 Pack",
     price: "$28.99",
     originalPrice: "$39.99",
@@ -94,6 +100,7 @@ const products = [
   },
   {
     id: 7,
+    slug: "small-dog-grooming-kit-professional",
     name: "Small Dog Grooming Kit - Professional Grade",
     price: "$39.99",
     originalPrice: "$54.99",
@@ -107,6 +114,7 @@ const products = [
   },
   {
     id: 8,
+    slug: "portable-water-food-bowl-set",
     name: "Portable Water and Food Bowl Set",
     price: "$16.99",
     originalPrice: "$24.99",
@@ -120,6 +128,7 @@ const products = [
   },
   {
     id: 9,
+    slug: "small-dog-training-treats-variety",
     name: "Small Dog Training Treats - Variety Pack",
     price: "$22.99",
     originalPrice: "$29.99",
@@ -358,16 +367,9 @@ export default function ReviewsPage() {
                   </CardHeader>
 
                   <CardContent className="space-y-4">
-                    <div className="flex items-center gap-2">
-                      <span className="text-2xl font-bold text-primary">{product.price}</span>
-                      {product.originalPrice && (
-                        <span className="text-lg text-muted-foreground line-through">{product.originalPrice}</span>
-                      )}
-                    </div>
-
                     <div className="flex gap-2">
                       <Button size="sm" className="flex-1" asChild>
-                        <Link href={`/product/${product.id}`}>
+                        <Link href={`/product/${product.slug}`}>
                           <Eye className="h-4 w-4 mr-2" />
                           View Review
                         </Link>

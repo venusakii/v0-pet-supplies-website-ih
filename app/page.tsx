@@ -116,6 +116,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                slug: "puppy-supplies-starter-kit",
                 name: "Puppy Starter Kit - 50 Pieces",
                 price: "$49.99",
                 rating: 4.8,
@@ -124,6 +125,7 @@ export default function HomePage() {
                 badge: "Best Seller",
               },
               {
+                slug: "small-dog-harness-leash-set",
                 name: "Small Dog Harness Set",
                 price: "$24.99",
                 rating: 4.9,
@@ -132,6 +134,7 @@ export default function HomePage() {
                 badge: "Top Rated",
               },
               {
+                slug: "interactive-puzzle-toys",
                 name: "Interactive Puzzle Toys",
                 price: "$19.99",
                 rating: 4.7,
@@ -142,9 +145,9 @@ export default function HomePage() {
             ].map((product, index) => (
               <Link
                 key={index}
-                href={`/product/${index + 1}`}
+                href={`/product/${product.slug}`}
                 className="block"
-                onClick={() => console.log(`[v0] Navigating to product ${index + 1}`)}
+                onClick={() => console.log(`[v0] Navigating to product ${product.slug}`)}
               >
                 <Card className="group hover:shadow-lg transition-all duration-200 cursor-pointer h-full hover:scale-[1.02]">
                   <div className="relative">
