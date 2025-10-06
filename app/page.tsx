@@ -178,7 +178,6 @@ export default function HomePage() {
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-primary">{product.price}</span>
                       <span className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
                         View Details →
                       </span>

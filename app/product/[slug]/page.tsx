@@ -24,6 +24,7 @@ import { notFound } from "next/navigation"
 const products = [
   {
     id: 1,
+    slug: "puppy-supplies-starter-kit",
     name: "Abbylike 50 Pcs Puppy Supplies Starter Kit for Small Dogs",
     price: "$49.99",
     originalPrice: "$69.99",
@@ -82,6 +83,7 @@ const products = [
   },
   {
     id: 2,
+    slug: "small-dog-harness-leash-set",
     name: "Small Dog Harness and Leash Set - No Pull Design",
     price: "$24.99",
     originalPrice: "$34.99",
@@ -136,6 +138,7 @@ const products = [
   },
   {
     id: 3,
+    slug: "interactive-puzzle-toys",
     name: "Interactive Puzzle Toys for Small Dogs - Mental Stimulation Set",
     price: "$32.99",
     originalPrice: "$42.99",
@@ -194,6 +197,7 @@ const products = [
   },
   {
     id: 4,
+    slug: "premium-grooming-kit",
     name: "Premium Small Dog Grooming Kit - Professional Grade",
     price: "$39.99",
     originalPrice: "$54.99",
@@ -248,6 +252,7 @@ const products = [
   },
   {
     id: 5,
+    slug: "portable-travel-dog-bowls",
     name: "Portable Travel Dog Bowls - Collapsible Set",
     price: "$18.99",
     originalPrice: "$24.99",
@@ -306,6 +311,7 @@ const products = [
   },
   {
     id: 6,
+    slug: "small-dog-training-treats",
     name: "Small Dog Training Treats - Natural & Healthy",
     price: "$16.99",
     originalPrice: "$21.99",
@@ -360,6 +366,7 @@ const products = [
   },
   {
     id: 7,
+    slug: "small-dog-grooming-kit-professional",
     name: "Small Dog Grooming Kit - Professional Grade",
     price: "$39.99",
     originalPrice: "$54.99",
@@ -404,6 +411,7 @@ const products = [
   },
   {
     id: 8,
+    slug: "portable-water-food-bowl-set",
     name: "Portable Water and Food Bowl Set",
     price: "$16.99",
     originalPrice: "$24.99",
@@ -452,6 +460,7 @@ const products = [
   },
   {
     id: 9,
+    slug: "small-dog-training-treats-variety",
     name: "Small Dog Training Treats - Variety Pack",
     price: "$22.99",
     originalPrice: "$29.99",
@@ -497,12 +506,12 @@ const products = [
 ]
 
 interface ProductPageProps {
-  params: Promise<{ id: string }>
+  params: Promise<{ slug: string }>
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
-  const { id } = await params
-  const product = products.find((p) => p.id === Number.parseInt(id))
+  const { slug } = await params
+  const product = products.find((p) => p.slug === slug)
 
   if (!product) {
     notFound()
@@ -628,25 +637,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
                     <span className="font-medium">{product.rating}</span>
                     <span className="text-muted-foreground">({product.reviews} reviews)</span>
                   </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl font-bold text-primary">{product.price}</span>
-                  {product.originalPrice && (
-                    <>
-                      <span className="text-xl text-muted-foreground line-through">{product.originalPrice}</span>
-                      <Badge variant="destructive">
-                        Save{" "}
-                        {Math.round(
-                          ((Number.parseFloat(product.originalPrice.slice(1)) -
-                            Number.parseFloat(product.price.slice(1))) /
-                            Number.parseFloat(product.originalPrice.slice(1))) *
-                            100,
-                        )}
-                        %
-                      </Badge>
-                    </>
-                  )}
                 </div>
 
                 <p className="text-lg text-muted-foreground text-pretty leading-relaxed">{product.description}</p>
@@ -861,7 +851,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                       <CardTitle className="text-lg">{review.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-pretty leading-relaxed mb-4">{review.content}</p>
+                      <p className="text-sm text-muted-foreground pl-4">{review.content}</p>
                       <div className="flex items-center gap-4">
                         <Button size="sm" variant="ghost" className="text-xs">
                           <ThumbsUp className="h-3 w-3 mr-1" />
@@ -956,7 +946,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                     <div className="flex items-center justify-between">
                       <span className="text-xl font-bold text-primary">{relatedProduct.price}</span>
                       <Button size="sm" asChild>
-                        <Link href={`/product/${relatedProduct.id}`}>View</Link>
+                        <Link href={`/product/${relatedProduct.slug}`}>View</Link>
                       </Button>
                     </div>
                   </CardContent>
