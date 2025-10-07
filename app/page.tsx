@@ -139,7 +139,7 @@ export default function HomePage() {
                 price: "$19.99",
                 rating: 4.7,
                 reviews: 634,
-                image: "/small-dog-puzzle-toys-and-treats.jpg",
+                image: "/interactive-puzzle-toys-for-small-dogs.jpg",
                 badge: "New",
               },
             ].map((product, index) => (
@@ -212,22 +212,22 @@ export default function HomePage() {
             {[
               {
                 name: "Toys & Entertainment",
-                image: "/small-dog-toys-and-balls.jpg",
+                image: "/colorful-small-dog-toys-and-balls.jpg",
                 count: "120+ items",
               },
               {
                 name: "Food & Treats",
-                image: "/small-dog-food-and-treats.jpg",
+                image: "/premium-small-dog-food-and-treats.jpg",
                 count: "85+ items",
               },
               {
                 name: "Collars & Leashes",
-                image: "/small-dog-collars-and-leashes.jpg",
+                image: "/stylish-small-dog-collars-and-leashes.jpg",
                 count: "95+ items",
               },
               {
                 name: "Beds & Comfort",
-                image: "/small-dog-beds-and-blankets.jpg",
+                image: "/cozy-small-dog-beds-and-blankets.jpg",
                 count: "60+ items",
               },
             ].map((category, index) => (
