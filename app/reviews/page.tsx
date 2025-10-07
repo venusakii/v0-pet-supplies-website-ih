@@ -11,7 +11,7 @@ import { Star, Search, Filter, Heart, ShoppingCart, Eye } from "lucide-react"
 import Link from "next/link"
 import { useState, useMemo } from "react"
 
-```javascript
+
 const products = [
   {
     id: 1,
