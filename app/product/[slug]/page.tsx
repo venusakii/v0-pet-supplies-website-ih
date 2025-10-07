@@ -6,18 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Separator } from "@/components/ui/separator"
 import { Progress } from "@/components/ui/progress"
-import {
-  Star,
-  Heart,
-  ShoppingCart,
-  Share2,
-  CheckCircle,
-  Truck,
-  Shield,
-  RotateCcw,
-  ThumbsUp,
-  ThumbsDown,
-} from "lucide-react"
+import { Star, ShoppingCart, CheckCircle, Truck, Shield, RotateCcw, ThumbsUp, ThumbsDown } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
@@ -65,11 +54,7 @@ const products = [
       "Great value with matching leash",
       "Durable stitching and materials",
     ],
-    cons: [
-      "May run small for some breeds",
-      "Leash could be slightly longer",
-      "Mesh may collect hair easily",
-    ],
+    cons: ["May run small for some breeds", "Leash could be slightly longer", "Mesh may collect hair easily"],
     expertReview: {
       overall: 4.5,
       quality: 4.6,
@@ -79,7 +64,8 @@ const products = [
       summary:
         "This harness and leash set excels in safety and comfort for extra small pets. The reflective features and adjustable design make it ideal for daily walks. While sizing requires careful measurement, the overall quality and affordability make it a top recommendation for small pet owners.",
     },
-    amazonLink: "https://www.amazon.com/BEAUTYZOO-Reflective-Extra-Small-Dogs-Cats/dp/B0B188V41H/ref=sr_1_11?crid=3OYHHEF6TDPM5&dib=eyJ2IjoiMSJ9.tdMp_1hmmJiT6o7mwIGPx6DHTgYDIwbRb2R1ntGqUpRK0jvwKhny2OuKIkSURAnt-QbmC2ogeO9fqgWFmzlq8GsxxrJksBnKqWcXrGoZdk_xqJuGmH65lzXidHV-r4qtt2rUEqdMfihHg-BCYYmbRKdyls9EM0ux4EcPIKuvVjlajXH1LK9d0tO1Ux_r_BbnxyNgKq1ql-NxTZsqGzjPcZmpd3lmWSu8zXjCwHBYO5W5GS-P0ZktAr6PWGi2lt9jcMDLLVtfweaghno3rNo8-J3G5v8u_9aj3wDXFpwfRL0.bOzrbKgtSMGrjoa_v14UgpQzd0OkBW4CrmYVaegawuc&dib_tag=se&keywords=Small%2BDog%2BHarness%2Band%2BLeash%2BSet%2B-%2BAdjustable&qid=1759822682&sprefix=small%2Bdog%2Bharness%2Band%2Bleash%2Bset%2B-%2Badjustable%2Caps%2C753&sr=8-11&th=1",
+    amazonLink:
+      "https://www.amazon.com/BEAUTYZOO-Reflective-Extra-Small-Dogs-Cats/dp/B0B188V41H/ref=sr_1_11?crid=3OYHHEF6TDPM5&dib=eyJ2IjoiMSJ9.tdMp_1hmmJiT6o7mwIGPx6DHTgYDIwbRb2R1ntGqUpRK0jvwKhny2OuKIkSURAnt-QbmC2ogeO9fqgWFmzlq8GsxxrJksBnKqWcXrGoZdk_xqJuGmH65lzXidHV-r4qtt2rUEqdMfihHg-BCYYmbRKdyls9EM0ux4EcPIKuvVjlajXH1LK9d0tO1Ux_r_BbnxyNgKq1ql-NxTZsqGzjPcZmpd3lmWSu8zXjCwHBYO5W5GS-P0ZktAr6PWGi2lt9jcMDLLVtfweaghno3rNo8-J3G5v8u_9aj3wDXFpwfRL0.bOzrbKgtSMGrjoa_v14UgpQzd0OkBW4CrmYVaegawuc&dib_tag=se&keywords=Small%2BDog%2BHarness%2Band%2BLeash%2BSet%2B-%2BAdjustable&qid=1759822682&sprefix=small%2Bdog%2Bharness%2Band%2Bleash%2Bset%2B-%2Badjustable%2Caps%2C753&sr=8-11&th=1",
   },
   {
     id: 2,
@@ -124,11 +110,7 @@ const products = [
       "Variety keeps puppies engaged",
       "Well-organized storage options",
     ],
-    cons: [
-      "Some items may be basic quality",
-      "Large box requires storage space",
-      "Not all items suit every breed",
-    ],
+    cons: ["Some items may be basic quality", "Large box requires storage space", "Not all items suit every breed"],
     expertReview: {
       overall: 4.8,
       quality: 4.7,
@@ -138,7 +120,8 @@ const products = [
       summary:
         "This starter kit provides exceptional value for new small dog owners, covering nearly every essential need. The variety and quantity of items make it ideal for beginners, though some pieces are basic. Overall, it's a comprehensive solution that saves time and money on individual purchases.",
     },
-    amazonLink: "https://www.amazon.com/Abbylike-Starter-Essentials-Accessories-Supplies/dp/B0CQX6G5KN/ref=sr_1_1?crid=BDN6IWKVELFH&dib=eyJ2IjoiMSJ9.Bs-U5togfKT3F1lp5nQk6vwC3-PQOgMMYD8CfFuuRHjNAkPIPPed2S4pnu4jJMThbo6x3VdGiu94pjFLvlF5R2qosxeAtzn9rdcRzvwQGUrGqNKm80e1YV1Pr-8UdBEL.TA0NAOGExo5FnV6Ak81LdC9hWr_wvJ-bc9B9Ssq0tw8&dib_tag=se&keywords=Abbylike%2B50%2BPcs%2BPuppy%2BSupplies%2BStarter%2BKit%2Bfor%2BSmall%2BDogs&qid=1759822756&sprefix=abbylike%2B50%2Bpcs%2Bpuppy%2Bsupplies%2Bstarter%2Bkit%2Bfor%2Bsmall%2Bdogs%2Caps%2C256&sr=8-1&th=1",
+    amazonLink:
+      "https://www.amazon.com/Abbylike-Starter-Essentials-Accessories-Supplies/dp/B0CQX6G5KN/ref=sr_1_1?crid=BDN6IWKVELFH&dib=eyJ2IjoiMSJ9.Bs-U5togfKT3F1lp5nQk6vwC3-PQOgMMYD8CfFuuRHjNAkPIPPed2S4pnu4jJMThbo6x3VdGiu94pjFLvlF5R2qosxeAtzn9rdcRzvwQGUrGqNKm80e1YV1Pr-8UdBEL.TA0NAOGExo5FnV6Ak81LdC9hWr_wvJ-bc9B9Ssq0tw8&dib_tag=se&keywords=Abbylike%2B50%2BPcs%2BPuppy%2BSupplies%2BStarter%2BKit%2Bfor%2BSmall%2BDogs&qid=1759822756&sprefix=abbylike%2B50%2Bpcs%2Bpuppy%2Bsupplies%2Bstarter%2Bkit%2Bfor%2Bsmall%2Bdogs%2Caps%2C256&sr=8-1&th=1",
   },
   {
     id: 3,
@@ -182,11 +165,7 @@ const products = [
       "Stylish design matches home decor",
       "Cooling gel keeps pet comfortable",
     ],
-    cons: [
-      "Higher price point",
-      "May be too large for tiny breeds",
-      "Initial off-gassing odor",
-    ],
+    cons: ["Higher price point", "May be too large for tiny breeds", "Initial off-gassing odor"],
     expertReview: {
       overall: 4.7,
       quality: 4.8,
@@ -196,7 +175,8 @@ const products = [
       summary:
         "This luxury bed combines orthopedic support with stylish design, making it ideal for small dogs with joint issues. The waterproof features and cooling gel add practical value. While pricey, the premium materials and comfort level justify the investment for discerning pet owners.",
     },
-    amazonLink: "https://www.amazon.com/NOAH-PAW-Orthopedic-Waterproof-Collection/dp/B0DS6HND4R/ref=sr_1_8?crid=1SXHO4DOPSAU0&dib=eyJ2IjoiMSJ9.yduOr2bc2ZJYJTX0c4hDfxoHAyF2Gu9snV6g1Wgg3FYqIG6bJ5c6xizgoAxXLtAPohcPKuKUODr_Lm2NTBEfoDsYjahqkrFhbjPPK6Q2RCjAQK5JtNL0tyg9pb_fUlyEST6cy50xiZzzhEJcrGeaOecmCLxv1ZTK7e6_lIHLE781nKpiNqJx1sBicXx2ACM-Fy5qzzPhSjWRaYUoBipYzsBIjUOCTrbFyikf54geO9HDHxfPP2RFcJFvlDecTr8ooROnoYUxnYXei_hwT-TCg2EhPTuogtZqmYrInprJQhk.j_dJPoU7wiK3aeOH0Kj0UT3cpI87JtmIiDkAKT-Z7Dw&dib_tag=se&keywords=Luxury%2BSmall%2BDog%2BBed%2Bwith%2BMemory%2BFoam&qid=1759822793&sprefix=luxury%2Bsmall%2Bdog%2Bbed%2Bwith%2Bmemory%2Bfoam%2Caps%2C730&sr=8-8&th=1",
+    amazonLink:
+      "https://www.amazon.com/NOAH-PAW-Orthopedic-Waterproof-Collection/dp/B0DS6HND4R/ref=sr_1_8?crid=1SXHO4DOPSAU0&dib=eyJ2IjoiMSJ9.yduOr2bc2ZJYJTX0c4hDfxoHAyF2Gu9snV6g1Wgg3FYqIG6bJ5c6xizgoAxXLtAPohcPKuKUODr_Lm2NTBEfoDsYjahqkrFhbjPPK6Q2RCjAQK5JtNL0tyg9pb_fUlyEST6cy50xiZzzhEJcrGeaOecmCLxv1ZTK7e6_lIHLE781nKpiNqJx1sBicXx2ACM-Fy5qzzPhSjWRaYUoBipYzsBIjUOCTrbFyikf54geO9HDHxfPP2RFcJFvlDecTr8ooROnoYUxnYXei_hwT-TCg2EhPTuogtZqmYrInprJQhk.j_dJPoU7wiK3aeOH0Kj0UT3cpI87JtmIiDkAKT-Z7Dw&dib_tag=se&keywords=Luxury%2BSmall%2BDog%2BBed%2Bwith%2BMemory%2BFoam&qid=1759822793&sprefix=luxury%2Bsmall%2Bdog%2Bbed%2Bwith%2Bmemory%2Bfoam%2Caps%2C730&sr=8-8&th=1",
   },
   {
     id: 4,
@@ -240,11 +220,7 @@ const products = [
       "Reduces destructive behavior",
       "Great for anxious dogs",
     ],
-    cons: [
-      "Not chew-proof material",
-      "May need supervision initially",
-      "Filling treats can be messy",
-    ],
+    cons: ["Not chew-proof material", "May need supervision initially", "Filling treats can be messy"],
     expertReview: {
       overall: 4.6,
       quality: 4.5,
@@ -254,7 +230,8 @@ const products = [
       summary:
         "This snuffle mat provides effective mental stimulation and helps with slow eating. The natural foraging design is engaging for most dogs, though it's not indestructible. It's an affordable, space-saving option for enrichment, particularly beneficial for bored or anxious small dogs.",
     },
-    amazonLink: "https://www.amazon.com/Vivifying-Snuffle-Mat-Interactive-Stimulation/dp/B09WV4CJ8R/ref=sr_1_6?crid=2485VXPJM6ETK&dib=eyJ2IjoiMSJ9.efph-zp8ebiPoECJeTWZv57-Y7RahElkCbXJiAuejjNXF-YxY-iQ1URHuK-uLom5pzqUQiOkf4ba9BwCB8fHPXPvgLcs8PtZC0SFeZTKg3Em2di7zCe_M5iQRbLMYsbNMeOl-xt4zycugwFOy_D-i0H57k5hb5nowGVUijD6tP72CYlmfmnH6qaDoTDWwxN8sb_d3efZtnpjIZk4HQ0gJF7AlnR6eHiKqiIKInMh-lZFRp3mM-zO2wGvskvP-XQBn9lJkWpDPExb9rwYbHSQ6VZkEOShYB4Lokcj3XP7QLw.54xmL6SOR359TUNvMTbRlGsbvCq_gjNgkYwR-MLsIms&dib_tag=se&keywords=Interactive%2BPuzzle%2BToys%2Bfor%2BMental%2BStimulation&qid=1759822932&sprefix=interactive%2Bpuzzle%2Btoys%2Bfor%2Bmental%2Bstimulation%2Caps%2C798&sr=8-6&th=1",
+    amazonLink:
+      "https://www.amazon.com/Vivifying-Snuffle-Mat-Interactive-Stimulation/dp/B09WV4CJ8R/ref=sr_1_6?crid=2485VXPJM6ETK&dib=eyJ2IjoiMSJ9.efph-zp8ebiPoECJeTWZv57-Y7RahElkCbXJiAuejjNXF-YxY-iQ1URHuK-uLom5pzqUQiOkf4ba9BwCB8fHPXPvgLcs8PtZC0SFeZTKg3Em2di7zCe_M5iQRbLMYsbNMeOl-xt4zycugwFOy_D-i0H57k5hb5nowGVUijD6tP72CYlmfmnH6qaDoTDWwxN8sb_d3efZtnpjIZk4HQ0gJF7AlnR6eHiKqiIKInMh-lZFRp3mM-zO2wGvskvP-XQBn9lJkWpDPExb9rwYbHSQ6VZkEOShYB4Lokcj3XP7QLw.54xmL6SOR359TUNvMTbRlGsbvCq_gjNgkYwR-MLsIms&dib_tag=se&keywords=Interactive%2BPuzzle%2BToys%2Bfor%2BMental%2BStimulation&qid=1759822932&sprefix=interactive%2Bpuzzle%2Btoys%2Bfor%2Bmental%2Bstimulation%2Caps%2C798&sr=8-6&th=1",
   },
   {
     id: 5,
@@ -312,7 +289,8 @@ const products = [
       summary:
         "This grooming kit delivers professional results at home with its quiet, powerful clippers. The waterproof design and comprehensive accessories make it user-friendly for small dog owners. While practice is needed for perfect cuts, it's a solid choice for regular at-home maintenance.",
     },
-    amazonLink: "https://www.amazon.com/oneisall-Grooming-Rechargeable-Stainless-Waterproof/dp/B0C3LBYPMZ/ref=sr_1_5?crid=G6QA6NQO4IYX&dib=eyJ2IjoiMSJ9.XIYfVvdFd7jB5e8bNqY5CWEJZHAvtbMHyxSYdDGfhI6Fu5AlCf0K0mVGanh605B8ikoaqriIAfi4pvknxERQR3jsg1WlgjnRtEZF2UINXFdTECf5pzqIBOdHs-t3btAPbKxh4mMiYVDHRA_9Kr9I9y02qxPBirwjZWAdljsnYKhw58OVSNV_l7guB8erLhSjoiRQyZCHkV_DkgO5D-JQ8vXJhklF8p926GLikCyLN6B3DrmKPUU1yidIfTAYpbqZsbW_4TjCyeT032byhqAAA3fMFu7X0ilYc3KZGs3r43k.chFis1fwHgTPIJvRcBePAWy75sY_q4NQxk6-pvUXUn8&dib_tag=se&keywords=Small+Dog+Grooming+Kit+-+Professional+Grade&qid=1759822995&sprefix=small+dog+grooming+kit+-+professional+grade%2Caps%2C230&sr=8-5",
+    amazonLink:
+      "https://www.amazon.com/oneisall-Grooming-Rechargeable-Stainless-Waterproof/dp/B0C3LBYPMZ/ref=sr_1_5?crid=G6QA6NQO4IYX&dib=eyJ2IjoiMSJ9.XIYfVvdFd7jB5e8bNqY5CWEJZHAvtbMHyxSYdDGfhI6Fu5AlCf0K0mVGanh605B8ikoaqriIAfi4pvknxERQR3jsg1WlgjnRtEZF2UINXFdTECf5pzqIBOdHs-t3btAPbKxh4mMiYVDHRA_9Kr9I9y02qxPBirwjZWAdljsnYKhw58OVSNV_l7guB8erLhSjoiRQyZCHkV_DkgO5D-JQ8vXJhklF8p926GLikCyLN6B3DrmKPUU1yidIfTAYpbqZsbW_4TjCyeT032byhqAAA3fMFu7X0ilYc3KZGs3r43k.chFis1fwHgTPIJvRcBePAWy75sY_q4NQxk6-pvUXUn8&dib_tag=se&keywords=Small+Dog+Grooming+Kit+-+Professional+Grade&qid=1759822995&sprefix=small+dog+grooming+kit+-+professional+grade%2Caps%2C230&sr=8-5",
   },
   {
     id: 6,
@@ -356,11 +334,7 @@ const products = [
       "Supports digestive health",
       "No fillers or by-products",
     ],
-    cons: [
-      "Higher price per serving",
-      "Requires rehydration for some",
-      "Messy if not portioned properly",
-    ],
+    cons: ["Higher price per serving", "Requires rehydration for some", "Messy if not portioned properly"],
     expertReview: {
       overall: 4.8,
       quality: 4.9,
@@ -370,7 +344,8 @@ const products = [
       summary:
         "Stella & Chewy's raw patties offer premium nutrition with real meat focus. The freeze-dried format preserves nutrients while being convenient. Though pricier, the quality and palatability make it worthwhile for health-conscious small dog owners seeking raw benefits without preparation hassle.",
     },
-    amazonLink: "https://www.amazon.com/Stella-Freeze-Dried-StellaS-Patties-Grain-Free/dp/B0158VAVBS/ref=sr_1_8?crid=38S7LQRJHPT1S&dib=eyJ2IjoiMSJ9.UOCE01tPywGkUkgBYqMGy7GUaAzhKhjXakJKV41bZnVVHtjfPwZS5VIZ4O05VwSy_chB5wDax0IwuBLTmh9dtLlNOtZA6kkq-0VGDLX_9TCgZ-Ymr5FgSSJd3kyfomGtLoBJfv1Agr5LlsZ0g-nn5MXIx6zqfi3Mcc0yKJuW2gMmOG0NCgrwRd5m30HPVxYBN3ifMV6aAVcb6z94XOrQ2dCIybnXlEXmBE6etS0VKokDZe_rhv6W-9SKsg9BXookNvC_8o3S-DW1sNbIICrpS4DiFcZg4t19BmJm1LDWcXs.xcuANxbUt39zBxVehrdw314Mwg-a1uPKUrhWPqlde3U&dib_tag=se&keywords=Premium%2BSmall%2BDog%2BFood%2B-%2BGrain%2BFree&qid=1759823052&rdc=1&sprefix=premium%2Bsmall%2Bdog%2Bfood%2B-%2Bgrain%2Bfree%2Caps%2C257&sr=8-8&th=1",
+    amazonLink:
+      "https://www.amazon.com/Stella-Freeze-Dried-StellaS-Patties-Grain-Free/dp/B0158VAVBS/ref=sr_1_8?crid=38S7LQRJHPT1S&dib=eyJ2IjoiMSJ9.UOCE01tPywGkUkgBYqMGy7GUaAzhKhjXakJKV41bZnVVHtjfPwZS5VIZ4O05VwSy_chB5wDax0IwuBLTmh9dtLlNOtZA6kkq-0VGDLX_9TCgZ-Ymr5FgSSJd3kyfomGtLoBJfv1Agr5LlsZ0g-nn5MXIx6zqfi3Mcc0yKJuW2gMmOG0NCgrwRd5m30HPVxYBN3ifMV6aAVcb6z94XOrQ2dCIybnXlEXmBE6etS0VKokDZe_rhv6W-9SKsg9BXookNvC_8o3S-DW1sNbIICrpS4DiFcZg4t19BmJm1LDWcXs.xcuANxbUt39zBxVehrdw314Mwg-a1uPKUrhWPqlde3U&dib_tag=se&keywords=Premium%2BSmall%2BDog%2BFood%2B-%2BGrain%2BFree&qid=1759823052&rdc=1&sprefix=premium%2Bsmall%2Bdog%2Bfood%2B-%2Bgrain%2Bfree%2Caps%2C257&sr=8-8&th=1",
   },
   {
     id: 7,
@@ -414,11 +389,7 @@ const products = [
       "Long shelf life",
       "No fillers or additives",
     ],
-    cons: [
-      "Premium price for treats",
-      "Limited variety in one pack",
-      "Can be too rich for some stomachs",
-    ],
+    cons: ["Premium price for treats", "Limited variety in one pack", "Can be too rich for some stomachs"],
     expertReview: {
       overall: 4.5,
       quality: 4.8,
@@ -428,7 +399,8 @@ const products = [
       summary:
         "Stewart's single-ingredient treats are premium rewards for training. The pure meat composition ensures high palatability and nutrition. Though expensive, their effectiveness in training sessions and lack of fillers make them a favorite among professional trainers for small dogs.",
     },
-    amazonLink: "https://www.amazon.com/Stewart-Ingredient-Resealable-Grain-Free-Gluten-Free/dp/B0002DGRSY/ref=sr_1_4?crid=1LBK4WCJQW1JU&dib=eyJ2IjoiMSJ9.tZlZcktEo6v9BZm3OeTaCkPCBFgwPUM7Tvyz8jXGUcndXiIUHnpvit-5tOsc8w0gFUP8KsEaj_g7EIlY_RSbsXb2y1Jc8jEmvJkUrr7x7nd5vaQ3cxW7r3J8ylRM6hmrzz67d4WtSJhDU3zdvYpOJZGY4ngCvaZ97GGbkcINXaXMuRiOWOG2lfJX8SC-RHEnqFDrcyLMYfNFG6DAFxJOXPOIiTw4xNnFUVXtfQXLGsRo3a5veK0Py0Eq0q2N6AQ8cBUdAdtJt8uMPLMnulMfnssRP3EHsvpM2E36i5wSV7k.EHhdXoEERDsU4cJgXN5TEH8_YSO_PAIJusblBw6NN8Y&dib_tag=se&keywords=Small%2BDog%2BTraining%2BTreats%2B-%2BVariety%2BPack&qid=1759823158&rdc=1&sprefix=small%2Bdog%2Btraining%2Btreats%2B-%2Bvariety%2Bpack%2Caps%2C281&sr=8-4&th=1",
+    amazonLink:
+      "https://www.amazon.com/Stewart-Ingredient-Resealable-Grain-Free-Gluten-Free/dp/B0002DGRSY/ref=sr_1_4?crid=1LBK4WCJQW1JU&dib=eyJ2IjoiMSJ9.tZlZcktEo6v9BZm3OeTaCkPCBFgwPUM7Tvyz8jXGUcndXiIUHnpvit-5tOsc8w0gFUP8KsEaj_g7EIlY_RSbsXb2y1Jc8jEmvJkUrr7x7nd5vaQ3cxW7r3J8ylRM6hmrzz67d4WtSJhDU3zdvYpOJZGY4ngCvaZ97GGbkcINXaXMuRiOWOG2lfJX8SC-RHEnqFDrcyLMYfNFG6DAFxJOXPOIiTw4xNnFUVXtfQXLGsRo3a5veK0Py0Eq0q2N6AQ8cBUdAdtJt8uMPLMnulMfnssRP3EHsvpM2E36i5wSV7k.EHhdXoEERDsU4cJgXN5TEH8_YSO_PAIJusblBw6NN8Y&dib_tag=se&keywords=Small%2BDog%2BTraining%2BTreats%2B-%2BVariety%2BPack&qid=1759823158&rdc=1&sprefix=small%2Bdog%2Btraining%2Btreats%2B-%2Bvariety%2Bpack%2Caps%2C281&sr=8-4&th=1",
   },
   {
     id: 8,
@@ -472,11 +444,7 @@ const products = [
       "Great for training rewards",
       "Long-lasting freshness",
     ],
-    cons: [
-      "Contains wheat (not grain-free)",
-      "Large size may need breaking",
-      "Higher calorie count",
-    ],
+    cons: ["Contains wheat (not grain-free)", "Large size may need breaking", "Higher calorie count"],
     expertReview: {
       overall: 4.6,
       quality: 4.7,
@@ -486,7 +454,8 @@ const products = [
       summary:
         "Old Mother Hubbard's classic biscuits remain a favorite for their natural ingredients and appealing flavor. The crunchy texture aids dental health while serving as effective training rewards. Though not grain-free, their tradition and quality make them a reliable choice for everyday treats.",
     },
-    amazonLink: "https://www.amazon.com/Old-Mother-Hubbard-P-Nuttier-Biscuits/dp/B084S9BYHS/ref=sr_1_9?crid=1HFPWJ2NXIHLM&dib=eyJ2IjoiMSJ9.tZlZcktEo6v9BZm3OeTaCkPCBFgwPUM7Tvyz8jXGUcndXiIUHnpvit-5tOsc8w0gFUP8KsEaj_g7EIlY_RSbsXb2y1Jc8jEmvJkUrr7x7nd5vaQ3cxW7r3J8ylRM6hmrzz67d4WtSJhDU3zdvYpOJZGY4ngCvaZ97GGbkcINXaXMuRiOWOG2lfJX8SC-RHEnqFDrcyLMYfNFG6DAFxJOXPOIiTw4xNnFUVXtfQXLGsRo3a5veK0Py0Eq0q2N6AQ8cBUdAdtJt8uMPLMnulMfnssRP3EHsvpM2E36i5wSV7k.EHhdXoEERDsU4cJgXN5TEH8_YSO_PAIJusblBw6NN8Y&dib_tag=se&keywords=Small%2BDog%2BTraining%2BTreats%2B-%2BVariety%2BPack&qid=1759823242&sprefix=small%2Bdog%2Btraining%2Btreats%2B-%2Bvariety%2Bpack%2Caps%2C271&sr=8-9&th=1",
+    amazonLink:
+      "https://www.amazon.com/Old-Mother-Hubbard-P-Nuttier-Biscuits/dp/B084S9BYHS/ref=sr_1_9?crid=1HFPWJ2NXIHLM&dib=eyJ2IjoiMSJ9.tZlZcktEo6v9BZm3OeTaCkPCBFgwPUM7Tvyz8jXGUcndXiIUHnpvit-5tOsc8w0gFUP8KsEaj_g7EIlY_RSbsXb2y1Jc8jEmvJkUrr7x7nd5vaQ3cxW7r3J8ylRM6hmrzz67d4WtSJhDU3zdvYpOJZGY4ngCvaZ97GGbkcINXaXMuRiOWOG2lfJX8SC-RHEnqFDrcyLMYfNFG6DAFxJOXPOIiTw4xNnFUVXtfQXLGsRo3a5veK0Py0Eq0q2N6AQ8cBUdAdtJt8uMPLMnulMfnssRP3EHsvpM2E36i5wSV7k.EHhdXoEERDsU4cJgXN5TEH8_YSO_PAIJusblBw6NN8Y&dib_tag=se&keywords=Small%2BDog%2BTraining%2BTreats%2B-%2BVariety%2BPack&qid=1759823242&sprefix=small%2Bdog%2Btraining%2Btreats%2B-%2Bvariety%2Bpack%2Caps%2C271&sr=8-9&th=1",
   },
   {
     id: 9,
@@ -517,7 +486,7 @@ const products = [
     ],
     specifications: {
       "Suitable for": "Small to medium dogs",
-      "Capacity": "20 oz each bowl",
+      Capacity: "20 oz each bowl",
       "Package Weight": "1.2 lbs",
       Dimensions: "10 x 7 x 4 inches",
       Material: "Stainless steel and silicone",
@@ -530,11 +499,7 @@ const products = [
       "Stable non-skid base",
       "Great for elevated feeding",
     ],
-    cons: [
-      "May be too heavy for travel",
-      "Elevated height not for all sizes",
-      "Mat can slip on smooth surfaces",
-    ],
+    cons: ["May be too heavy for travel", "Elevated height not for all sizes", "Mat can slip on smooth surfaces"],
     expertReview: {
       overall: 4.4,
       quality: 4.5,
@@ -544,7 +509,8 @@ const products = [
       summary:
         "Gorilla Grip's bowl set shines in preventing spills during meals. The stainless steel and silicone combination offers durability and ease of cleaning. While better suited for home use than travel, it's a practical solution for messy eaters among small dogs.",
     },
-    amazonLink: "https://www.amazon.com/Gorilla-Grip-Dog-Bowls-Set/dp/B098BPM99P/ref=sr_1_7?crid=3ASBF55TOYL93&dib=eyJ2IjoiMSJ9.iDGowK1Z9sSOPbZcDB_GjTwQZUMV3vSs0rH9uVtILVzVo3APAkyZpQ63z7MY5taDDs1TcvAkBT4LHpyyVSK02FwwkrpYYuCikzm4gDIAeg8jtem4wrpgZeHmfYOoTbrGP5L89S3f7MIBN4u9UzPyILObTMZNtv9Rj5QHcbWuAaeXZSq5fQNhG8Mb2jSadpVR7oOygIhUVHGxX2b4_qYChPod4MHXqx8lrP7UJ2ddI1hBuWgp3y20d5HDP9XHYV1VBJ3rj1I7AmzNpcJ2dQkjLwOahJc4QAnYr8fzZ4xipp4.UXxkAItuUdRlg3Gd--iH33uMOXWdjvIuI8ArZuIhrgQ&dib_tag=se&keywords=Portable%2BWater%2Band%2BFood%2BBowl%2BSet&qid=1759823553&sprefix=portable%2Bwater%2Band%2Bfood%2Bbowl%2Bset%2Caps%2C251&sr=8-7&th=1",
+    amazonLink:
+      "https://www.amazon.com/Gorilla-Grip-Dog-Bowls-Set/dp/B098BPM99P/ref=sr_1_7?crid=3ASBF55TOYL93&dib=eyJ2IjoiMSJ9.iDGowK1Z9sSOPbZcDB_GjTwQZUMV3vSs0rH9uVtILVzVo3APAkyZpQ63z7MY5taDDs1TcvAkBT4LHpyyVSK02FwwkrpYYuCikzm4gDIAeg8jtem4wrpgZeHmfYOoTbrGP5L89S3f7MIBN4u9UzPyILObTMZNtv9Rj5QHcbWuAaeXZSq5fQNhG8Mb2jSadpVR7oOygIhUVHGxX2b4_qYChPod4MHXqx8lrP7UJ2ddI1hBuWgp3y20d5HDP9XHYV1VBJ3rj1I7AmzNpcJ2dQkjLwOahJc4QAnYr8fzZ4xipp4.UXxkAItuUdRlg3Gd--iH33uMOXWdjvIuI8ArZuIhrgQ&dib_tag=se&keywords=Portable%2BWater%2Band%2BFood%2BBowl%2BSet&qid=1759823553&sprefix=portable%2Bwater%2Band%2Bfood%2Bbowl%2Bset%2Caps%2C251&sr=8-7&th=1",
   },
 ]
 
@@ -700,20 +666,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
               {/* Purchase Options */}
               <div className="space-y-4 p-6 bg-muted/20 rounded-lg">
-                <div className="flex gap-3">
-                  <Button size="lg" className="flex-1" asChild>
-                    <a href={product.amazonLink} target="_blank" rel="noopener noreferrer">
-                      <ShoppingCart className="h-5 w-5 mr-2" />
-                      Buy on Amazon
-                    </a>
-                  </Button>
-                  <Button size="lg" variant="outline">
-                    <Heart className="h-5 w-5" />
-                  </Button>
-                  <Button size="lg" variant="outline">
-                    <Share2 className="h-5 w-5" />
-                  </Button>
-                </div>
+                <Button size="lg" className="w-full" asChild>
+                  <a href={product.amazonLink} target="_blank" rel="noopener noreferrer">
+                    <ShoppingCart className="h-5 w-5 mr-2" />
+                    Buy on Amazon
+                  </a>
+                </Button>
 
                 <div className="flex items-center gap-6 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">

@@ -7,10 +7,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Star, Search, Filter, Heart, ShoppingCart, Eye } from "lucide-react"
+import { Star, Search, Filter, Heart, Eye } from "lucide-react"
 import Link from "next/link"
 import { useState, useMemo } from "react"
-
 
 const products = [
   {
@@ -368,17 +367,12 @@ export default function ReviewsPage() {
                   </CardHeader>
 
                   <CardContent className="space-y-4">
-                    <div className="flex gap-2">
-                      <Button size="sm" className="flex-1" asChild>
-                        <Link href={`/product/${product.slug}`}>
-                          <Eye className="h-4 w-4 mr-2" />
-                          View Review
-                        </Link>
-                      </Button>
-                      <Button size="sm" variant="outline">
-                        <ShoppingCart className="h-4 w-4" />
-                      </Button>
-                    </div>
+                    <Button size="sm" className="w-full" asChild>
+                      <Link href={`/product/${product.slug}`}>
+                        <Eye className="h-4 w-4 mr-2" />
+                        View Review
+                      </Link>
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
