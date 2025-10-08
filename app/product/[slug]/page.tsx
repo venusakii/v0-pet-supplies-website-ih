@@ -944,12 +944,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <div className="flex items-center justify-between">
-                      <span className="text-xl font-bold text-primary">{relatedProduct.price}</span>
-                      <Button size="sm" asChild>
-                        <Link href={`/product/${relatedProduct.slug}`}>View</Link>
-                      </Button>
-                    </div>
+                    <Button size="sm" variant="outline" className="w-full bg-transparent" asChild>
+                      <Link href={`/product/${relatedProduct.slug}`}>View Details</Link>
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
